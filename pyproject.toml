@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dancing-with-the-sars"
+version = "0.1.0"
+description = "A Python surface-change visualizer prototype for NASA Space Apps Challenge"
+readme = "README.md"
+requires-python = ">=3.10,<3.15"
+dependencies = [
+  "fastapi>=0.115,<1",
+  "flask>=3.1,<4",
+  "a2wsgi>=1.10.10,<2",
+  "uvicorn>=0.34,<1",
+  "pydeck>=0.9.1,<1",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
